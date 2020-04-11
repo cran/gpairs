@@ -85,7 +85,7 @@ allexamples <- FALSE
 y <- data.frame(A=c(rep("red", 100), rep("blue", 100)),
                 B=c(rnorm(100),round(rnorm(100,5,1),1)), C=runif(200),
                 D=c(rep("big", 150), rep("small", 50)),
-                E=rnorm(200))
+                E=rnorm(200), stringsAsFactors=TRUE)
 gpairs(y)
 
 data(iris)

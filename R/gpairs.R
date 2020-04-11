@@ -1,6 +1,8 @@
 ## Modified by M. Friendly 3/5/2014 9:01:30 AM
 ## -  allow mosaic.pars$gp to be passed to strucplot(); defaults to NULL
 ## -  allow mosaic.pars$gp_args to be passed to strucplot(); defaults to list()
+## Modified by J. Emerson 3/20/2020
+## -  introduce stringsAsFactors = TRUE because of the new defaults
 
 "gpairs" <- function(x,
                      upper.pars=list(scatter="points",
@@ -46,7 +48,7 @@
 #if (!require(vcd)) stop("library(vcd) is required and unavailable.\n\n")
 
 if (!is.data.frame(x)) {
-  if (is.matrix(x)) x <- as.data.frame(x)
+  if (is.matrix(x)) x <- as.data.frame(x, stringsAsFactors=TRUE)
   else stop("What did you give me? You might want to use Excel. (Only one column in argument to gpairs.\n\n")
 }
 
