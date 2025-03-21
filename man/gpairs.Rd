@@ -76,8 +76,8 @@ Friendly, M., 2002, "Corrgrams: Exploratory displays for correlation matrices." 
 
 Green, W. A. (2006) "Loosening the CLAMP: An exploratory graphical approach to the Climate Leaf Analysis Multivariate Program." \emph{Palaeontologia Electronica} 9(2):9A.
 }
-\author{John W. Emerson, Walton Green; thanks to Michael Friendly for augmenting the functionality with arguments to \code{strucplot}.}
-\seealso{\code{\link{pairs}}, \code{\link{splom}}, \code{\link{mosaicplot}}, \code{\link[vcd]{strucplot}}, \code{\link{bwplot}}, \code{\link{barcode}}, \code{\link{stripplot}}.}
+\author{John W. Emerson, Walton Green; thanks to Michael Friendly for augmenting the functionality with arguments to \code{strucplot} and to Liya Xiang for the September 2024 fixes related to grid graphics rotation (via package barcode) and the display problems with boxplot tiles from package lattice that plagued some environments.}
+\seealso{\code{\link{pairs}}, \code{\link[lattice]{splom}}, \code{\link{mosaicplot}}, \code{\link[vcd]{strucplot}}, \code{\link[lattice]{bwplot}}, \code{\link[barcode]{barcode}}, \code{\link{stripplot}}.}
 \examples{
 
 allexamples <- FALSE

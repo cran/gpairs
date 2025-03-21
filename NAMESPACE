@@ -1,4 +1,5 @@
 importFrom("grDevices", "grey", "hsv")
+importFrom("methods", "is")
 importFrom("stats", "cor", "cor.test", "dist", "hclust", "lm",
            "na.omit", "pf", "prcomp", "predict")
 import(grid, lattice, vcd, barcode, MASS, colorspace)
